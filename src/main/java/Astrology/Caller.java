@@ -14,8 +14,25 @@ public class Caller {
 
 class CallingFrame extends JFrame{
     public CallingFrame(){
+        //Creating Label
+        JLabel welcomeMessage = new JLabel("Welcome this program allows you to find out your zodiac sign!");
 
-        JButton button = new JButton("Click Here to find out your Zodiac Sign!");
+
+        // Adding images
+        JLabel welcomeImage = new JLabel();
+        welcomeImage.setIcon(new ImageIcon("C:\\Users\\anemi\\Downloads\\Astrology-main (1)\\Astrology-main\\src\\main\\resources\\zodiacs\\CaWelcomePicture.jpeg"));
+        welcomeImage.setHorizontalAlignment(SwingConstants.CENTER);
+        JPanel ImagePanel = new JPanel();
+        ImagePanel.add(welcomeImage);
+        add(ImagePanel);
+
+
+        // Adding a button
+        JButton button = new JButton("Welcome!");
+        button.setBounds(350, 300, 100, 50);
+        add(button);
+
+        // adding button click event
         button.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 new Form();
@@ -23,8 +40,11 @@ class CallingFrame extends JFrame{
             }
         });
 
-        add(button);
-        setSize(300,400);
+        JPanel panel = new JPanel();
+        panel.add(welcomeMessage);
+        add(panel);
+        add(ImagePanel);
+        setSize(800,600); // google how to wrap a button
         setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
