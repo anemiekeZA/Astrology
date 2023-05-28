@@ -1,4 +1,6 @@
-package Astrology;
+package Astrology.main;
+import Astrology.forms.Form;
+
 import javax.swing.*;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -20,7 +22,7 @@ class CallingFrame extends JFrame{
 
         // Adding images
         JLabel welcomeImage = new JLabel();
-        welcomeImage.setIcon(new ImageIcon("C:\\Users\\anemi\\Downloads\\Astrology-main (1)\\Astrology-main\\src\\main\\resources\\zodiacs\\CaWelcomePicture.jpeg"));
+        welcomeImage.setIcon(new ImageIcon("C:\\dev\\personalProjects\\Astrology\\src\\main\\java\\Astrology\\images\\CaWelcomePicture.jpeg"));
         welcomeImage.setHorizontalAlignment(SwingConstants.CENTER);
         JPanel ImagePanel = new JPanel();
         ImagePanel.add(welcomeImage);
@@ -49,22 +51,6 @@ class CallingFrame extends JFrame{
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
     }
-//    public CallingImage(){
-//
-//        Form form = new Form();
 
-//        form.addActionListener(new ActionListener() {
-//            public void actionPerformed(ActionEvent e) {
-//               new ImageAdder();
-//                dispose();
-//            }
-//        });
-
-//        add(ImageAdder);
-//        setSize(300,400);
-//        setVisible(true);
-//        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-//    }
 
 }

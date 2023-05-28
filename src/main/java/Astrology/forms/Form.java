@@ -1,4 +1,4 @@
-package Astrology;
+package Astrology.forms;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -29,7 +29,8 @@ public class Form extends JFrame{
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                 JOptionPane.showMessageDialog(button,textName.getText()+ ",Hello");
+                new ZodiaImageFrame();
+                dispose();
             }
         });
     }

@@ -1,4 +1,4 @@
-package Astrology;
+package Astrology.forms;
 
 import javax.swing.*;
 import java.awt.*;
