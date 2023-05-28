@@ -21,7 +21,7 @@ public class Form extends JFrame{
 //        Form form = new Form();
         this.setContentPane(this.panelMain);
         this.setTitle("title");
-        this.setBounds(300,400,200,400);
+        this.setBounds(300,400,800,600);
         //form.setSize(300,400);
         this.setVisible(true);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
